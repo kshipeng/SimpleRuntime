@@ -13,6 +13,8 @@
 		3DE4C2171DB4CAD000333891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4C2151DB4CAD000333891 /* Main.storyboard */; };
 		3DE4C2191DB4CAD000333891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4C2181DB4CAD000333891 /* Assets.xcassets */; };
 		3DE4C21C1DB4CAD000333891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4C21A1DB4CAD000333891 /* LaunchScreen.storyboard */; };
+		3DE4C22B1DB5B17C00333891 /* SPRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4C22A1DB5B17C00333891 /* SPRuntime.m */; };
+		3DE4C22F1DB5B72900333891 /* UIImage+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4C22E1DB5B72900333891 /* UIImage+runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3DE4C2181DB4CAD000333891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE4C21B1DB4CAD000333891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE4C21D1DB4CAD000333891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE4C2291DB5B17C00333891 /* SPRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRuntime.h; sourceTree = "<group>"; };
+		3DE4C22A1DB5B17C00333891 /* SPRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRuntime.m; sourceTree = "<group>"; };
+		3DE4C22D1DB5B72900333891 /* UIImage+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+runtime.h"; sourceTree = "<group>"; };
+		3DE4C22E1DB5B72900333891 /* UIImage+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		3DE4C20B1DB4CAD000333891 /* SimpleRuntime */ = {
 			isa = PBXGroup;
 			children = (
+				3DE4C22C1DB5B6BF00333891 /* demo */,
 				3DE4C2231DB4CC0800333891 /* SimpleRuntime */,
 				3DE4C20F1DB4CAD000333891 /* AppDelegate.h */,
 				3DE4C2101DB4CAD000333891 /* AppDelegate.m */,
@@ -83,8 +90,19 @@
 		3DE4C2231DB4CC0800333891 /* SimpleRuntime */ = {
 			isa = PBXGroup;
 			children = (
+				3DE4C2291DB5B17C00333891 /* SPRuntime.h */,
+				3DE4C22A1DB5B17C00333891 /* SPRuntime.m */,
 			);
 			path = SimpleRuntime;
+			sourceTree = "<group>";
+		};
+		3DE4C22C1DB5B6BF00333891 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4C22D1DB5B72900333891 /* UIImage+runtime.h */,
+				3DE4C22E1DB5B72900333891 /* UIImage+runtime.m */,
+			);
+			name = demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE4C2141DB4CAD000333891 /* ViewController.m in Sources */,
+				3DE4C22F1DB5B72900333891 /* UIImage+runtime.m in Sources */,
+				3DE4C22B1DB5B17C00333891 /* SPRuntime.m in Sources */,
 				3DE4C2111DB4CAD000333891 /* AppDelegate.m in Sources */,
 				3DE4C20E1DB4CAD000333891 /* main.m in Sources */,
 			);
